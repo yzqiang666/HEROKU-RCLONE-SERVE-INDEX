@@ -7,7 +7,7 @@
   "env": {
      "CONFIG_IN_URL": {
       "description": "Please Paste your rclone.conf file in URL. ",
-      "value": "https://smccb.tk:800/rclone.conf"
+      "value": "http://smccb.tk:800/rclone.conf"
     },
      "CLOUDNAME": {
       "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.",
