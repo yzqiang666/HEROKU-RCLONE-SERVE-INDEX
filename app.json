@@ -5,6 +5,14 @@
   "logo": "https://forum.rclone.org/uploads/default/original/2X/0/0f430bb0f2f7a9ed020a9e93c89f4d332adcac4b.gif",
   "keywords": ["nginx", "fileindex", "mega", "onedrive", "remote-index", "anyremote", "anycloud", "cloud-downloader", "rclone-backdoor", "index-backdoor", "rclone", "index"],
   "env": {
+     "USER": {
+      "description": "Please Paste your login user. ",
+      "value": "user"
+    },
+     "PASSWORD": {
+      "description": "Please Paste your login password. ",
+      "value": "password"
+    },
      "CONFIG_IN_URL": {
       "description": "Please Paste your rclone.conf file in URL. ",
       "value": "http://smccb.tk:800/rclone.conf"
