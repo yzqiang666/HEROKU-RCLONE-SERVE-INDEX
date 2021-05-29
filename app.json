@@ -19,11 +19,11 @@
     },
      "CLOUDNAME": {
       "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.",
-      "value": "team"
+      "value": ""
     },
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
-      "value": "movies"
+      "value": ""
     }
 
   },
