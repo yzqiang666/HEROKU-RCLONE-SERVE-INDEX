@@ -16,7 +16,17 @@
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
       "value": "movies"
+    },
+     "CLOUDUSER": {
+      "description": "Please enter your user name",
+      "value": "yzqiang"
+    },
+     "CLOUDPASSWORD": {
+      "description": "Please enter your user password",
+      "value": "yzqyzq1234"
     }
+     
+     
     
 
 
