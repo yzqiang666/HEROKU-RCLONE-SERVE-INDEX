@@ -6,4 +6,8 @@ rclone listremotes
 wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
 rclone version
 rclone listremotes
-rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT --user $USER --pass $PASSWORD --vfs-read-chunk-size 128M
+UU=""
+[ ! "$USER" == "" ] && UU=$UU" --user $USER"
+[ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
+
+rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 128M
