@@ -7,11 +7,11 @@
   "env": {
      "USER": {
       "description": "Please Paste your login user. ",
-      "value": "user"
+      "value": "none"
     },
      "PASSWORD": {
       "description": "Please Paste your login password. ",
-      "value": "password"
+      "value": "none"
     },
      "CONFIG_IN_URL": {
       "description": "Please Paste your rclone.conf file in URL. ",
