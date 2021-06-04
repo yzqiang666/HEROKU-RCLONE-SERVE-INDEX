@@ -12,8 +12,8 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
-#mkdir /opt
-rclone mount team: /nfs \
+mkdir /opt
+rclone mount $CLOUDNAME:$CLOUDPATH /opt \
 --copy-links \
 --no-gzip-encoding \
 --no-check-certificate \
