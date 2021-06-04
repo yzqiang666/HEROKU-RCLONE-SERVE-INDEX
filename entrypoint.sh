@@ -8,8 +8,8 @@ rclone version
 rclone listremotes
 UU=""
 [  "$CLOUDPATH" == "demo" ] && CLOUDPATH=""
-[  "$USER" == "user" ] && USER=""
-[  "$PASSWORD" == "password" ] && PASSWORD=""
+[  "$USER" == "none" ] && USER=""
+[  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
 rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 128M 
