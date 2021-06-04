@@ -12,5 +12,19 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
+#mkdir /opt
+rclone mount team: /nfs \
+--copy-links \
+--no-gzip-encoding \
+--no-check-certificate \
+--umask 0000 \
+--default-permissions \
+--allow-non-empty \
+--allow-other \
+--buffer-size 32M \
+--dir-cache-time 12h \
+--vfs-read-chunk-size 64M \
+--vfs-read-chunk-size-limit 128M &
+
 rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 128M 
 
