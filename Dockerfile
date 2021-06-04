@@ -2,10 +2,10 @@ FROM nginx:1.19.6
 RUN set -ex\
     && apt update -y \
     && apt upgrade -y \
+#    && apt install -y fuse\   
     && apt install -y wget\
-    && apt install -y unzip\
-    && apt install -y fuse
-RUN mknod -m 666 /dev/fuse c 10 229 && modprobe fuse
+    && apt install -y unzip
+#RUN mknod -m 666 /dev/fuse c 10 229 && modprobe fuse
 
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     unzip rclone-current-linux-amd64.zip && \
@@ -15,6 +15,5 @@ RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
 
 COPY entrypoint.sh /entrypoint.sh
 #COPY developeranaz-rc.zip /developeranaz-rc.zip
-#COPY rclone.conf /.config/rclone/rclone.conf
 RUN chmod +x /entrypoint.sh
 CMD /entrypoint.sh
