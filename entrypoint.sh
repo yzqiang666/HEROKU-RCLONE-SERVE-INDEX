@@ -7,7 +7,7 @@ wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
 rclone version
 rclone listremotes
 UU=""
-[  "$CLOUDPATH" == "demo" ] && CLOUDPATH=""
+[  "$CLOUDPATH" == "none" ] && CLOUDPATH=""
 [  "$USER" == "none" ] && USER=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
