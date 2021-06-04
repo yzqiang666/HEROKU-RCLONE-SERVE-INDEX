@@ -12,7 +12,7 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
-mkdir /opt
+modprobe fuse
 rclone mount $CLOUDNAME:$CLOUDPATH /opt \
 --copy-links \
 --no-gzip-encoding \
