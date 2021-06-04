@@ -5,20 +5,6 @@ UU=""
 [  "$USER" == "none" ] && USER=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
-[ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD "
-#modprobe fuse
-#rclone mount $CLOUDNAME:$CLOUDPATH /opt \
-#--copy-links \
-#--no-gzip-encoding \
-#--no-check-certificate \
-#--umask 0000 \
-#--default-permissions \
-#--allow-non-empty \
-#--allow-other \
-#--buffer-size 32M \
-#--dir-cache-time 12h \
-#--vfs-read-chunk-size 64M \
-#--vfs-read-chunk-size-limit 128M &
-
+[ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD"
 rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 128M 
 
