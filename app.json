@@ -31,11 +31,11 @@
     },
      "VFS_READ_CHUNK_SIZE": {
       "description": "Please enter vfs-read-chunk-size",
-      "value": "256M"     
+      "value": "128M"     
     },
      "OTHER_ARGUMENT": {
       "description": "Please enter other argument for rclone, but not vfs-read-chunk-size",
-      "value": "--buffer-size 256M --dir-cache-time 12h --vfs-read-chunk-size-limit 2G --vfs-cache-mode writes",
+      "value": "--dir-cache-time 12h",
       "required": false     
     }
   },
