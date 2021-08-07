@@ -1,7 +1,6 @@
 #!/bin/bash
 #author https://github.com/developeranaz (don't delete this)
-rclone version
-rclone listremotes
+
 cat <<-EOF >/.config/rclone/rclone.conf
 [team]
 type = drive
@@ -17,7 +16,9 @@ echo =================================
 cat /.config/rclone/rclone.conf
 echo ==========================
 rclone version
+echo AAAAAAAAAAAAAAAAAAAAAA
 rclone listremotes
+echo BBBBBBBBBBBBBBBBBBBBBBBB
 UU=""
 [  "$CLOUDPATH" == "none" ] && CLOUDPATH=""
 [  "$USER" == "none" ] && USER=""
