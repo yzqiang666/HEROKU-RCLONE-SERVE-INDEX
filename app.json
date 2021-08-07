@@ -28,6 +28,15 @@
       "description": "Please enter your remote cloud path",
       "value": "",
       "required": false
+    },
+     "VFS_READ_CHUNK_SIZE": {
+      "description": "Please enter vfs-read-chunk-size",
+      "value": "256M",
+      "required": false       
+    },
+     "OTHER_ARGUMENT": {
+      "description": "Please enter other argument for rclone",
+      "value": ""
     }
   },
   "website": "",
