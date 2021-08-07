@@ -17,6 +17,11 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD"
-
-rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 256M 
+[  "$CLOUDNAME" == "none" ] && CLOUDNAME=""
+if [  "$CLOUDNAME" == "" ] ; then
+  CLOUDNAME=`rclone listremotes|head -n 1`
+else
+  CLOUDNAME=$CLOUDNAME":"
+fi
+rclone serve  webdav $CLOUDNAME$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 256M 
 
