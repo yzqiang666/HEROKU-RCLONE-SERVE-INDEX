@@ -18,7 +18,12 @@
      "RCLONE_INFO": {
       "description": "Please Paste  from file： rclone.conf",
       "value": "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\r\n     Paste from file rclone.conf ! \r\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\r\n\r\n"
-    },                  
+    },
+     "CLOUDNAME": {
+      "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.See Readme https://github.com/yzqiang666/HEROKU-RCLONE-SERVE-INDEX",
+      "value": "",
+       "required": false
+    },
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
       "value": "",
