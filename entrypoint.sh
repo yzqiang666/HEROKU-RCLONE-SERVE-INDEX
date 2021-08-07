@@ -5,7 +5,7 @@ bash status | grep 'working\|maintenance'
 rclone version
 rclone listremotes
 #refreshing Rclone
-wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
+#wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
 mkdir -p /.config/rclone
 
 echo "$RCLONE_INFO" >>'/.config/rclone/rclone.conf'
