@@ -14,23 +14,23 @@
       "value": "none"
     },
     "GG1_CLIENT_ID": {
-      "description": "Input client_id",
+      "description": "Please Paste  client_id",
       "value": ""
     },
     "GG2_CLIENT_SECRET": {
-      "description": "Input client_secret",
+      "description": "Please Paste  client_secret",
       "value": ""
     },
     "GG3_ACCESS_TOKEN": {
-      "description": "Input access_token",
+      "description": "Please Paste  access_token",
       "value": ""
     },    
     "GG4_REFRESH_TOKEN": {
-      "description": "Input refresh_token",
+      "description": "Please Paste  refresh_token",
       "value": ""
     },    
      "GG5_TEAM_DRIVE": {
-      "description": "Input team_drive",
+      "description": "Please Paste  team_drive",
       "value": ""
     },           
      "CLOUDPATH": {
