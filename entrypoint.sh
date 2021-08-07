@@ -12,13 +12,13 @@ team_drive = #team_drive#
 EOF
 
 eval "sed  -i 's/#client_id#/"$GG1_CLIENT_ID"/;s/#client_secret#/"$GG2_CLIENT_SECRET"/;s/#access_token#/"$GG3_ACCESS_TOKEN"/;s/#refresh_token#/"$GG4_REFRESH_TOKEN"/;s/#team_drive#/"$GG5_TEAM_DRIVE"/;'  /.config/rclone/rclone.conf"
-echo =================================
-cat /.config/rclone/rclone.conf
-echo ==========================
+#echo =================================
+#cat /.config/rclone/rclone.conf
+#echo ==========================
 rclone version
-echo AAAAAAAAAAAAAAAAAAAAAA
+#echo AAAAAAAAAAAAAAAAAAAAAA
 rclone listremotes
-echo BBBBBBBBBBBBBBBBBBBBBBBB
+#echo BBBBBBBBBBBBBBBBBBBBBBBB
 UU=""
 [  "$CLOUDPATH" == "none" ] && CLOUDPATH=""
 [  "$USER" == "none" ] && USER=""
