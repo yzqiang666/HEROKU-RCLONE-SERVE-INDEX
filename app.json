@@ -7,11 +7,13 @@
   "env": {
      "USER": {
       "description": "Please Paste your login user. ",
-      "value": "none"
+      "value": "",
+      "required": false
     },
      "PASSWORD": {
       "description": "Please Paste your login password. ",
-      "value": "none"
+      "value": "",
+      "required": false       
     },
      "RCLONE_INFO": {
       "description": "Please Paste  from file： rclone.conf",
@@ -19,7 +21,8 @@
     },                  
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
-      "value": "none"
+      "value": "",
+      "required": false
     }
   },
   "website": "",
