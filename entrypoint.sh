@@ -14,4 +14,4 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD"
-rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 128M 
+rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 256M 
