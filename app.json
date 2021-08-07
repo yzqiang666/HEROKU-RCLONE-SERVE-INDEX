@@ -13,15 +13,26 @@
       "description": "Please Paste your login password. ",
       "value": "none"
     },
-    "RCLONE_INFO": {
-      "description": "Please Paste  in file rclone.conf ",
-      "value": "!!!!!!!!!!!!! paste from rclone.conf !!!!!!!!!!!!!!!!!"
-    },
-    "CLOUDNAME": {
-      "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.See Readme https://github.com/yzqiang666/HEROKU-RCLONE-SERVE-INDEX",
+    "GG1_CLIENT_ID": {
+      "description": "Please Paste  client_id",
       "value": ""
-    }
-       
+    },
+    "GG2_CLIENT_SECRET": {
+      "description": "Please Paste  client_secret",
+      "value": ""
+    },
+    "GG3_ACCESS_TOKEN": {
+      "description": "Please Paste  access_token",
+      "value": ""
+    },    
+    "GG4_REFRESH_TOKEN": {
+      "description": "Please Paste  refresh_token",
+      "value": ""
+    },    
+     "GG5_TEAM_DRIVE": {
+      "description": "Please Paste  team_drive",
+      "value": ""
+    },                  
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
       "value": "none"
