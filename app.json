@@ -13,23 +13,30 @@
       "description": "Please Paste your login password. ",
       "value": "none"
     },
-     "CONFIG_IN_URL": {
-      "description": "Please Paste your rclone.conf file in URL. ",
-      "value": "http://XXXX.XXXXX/rclone.conf"
-    },
-    "RCLONE_INFO": {
-      "description": "Input rclone config information",
-      "value": "[team]\r\ntype = drive\r\nclient_id = XXXXXX\r\nclient_secret = XXXXXX\r\n scope = drive\r\ntoken = {\"access_token\":\"XXXXXX\",  \"token_type\":\"Bearer\",  \"refresh_token\":\"XXXXXX\"}\r\nteam_drive = XXXXXX\r\n"
-    },
-     "CLOUDNAME": {
-      "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.",
+    "GG1_CLIENT_ID": {
+      "description": "Input client_id",
       "value": ""
     },
+    "GG2_CLIENT_SECRET": {
+      "description": "Input client_secret",
+      "value": ""
+    },
+    "GG3_ACCESS_TOKEN": {
+      "description": "Input access_token",
+      "value": ""
+    },    
+    "GG4_REFRESH_TOKEN": {
+      "description": "Input refresh_token",
+      "value": ""
+    },    
+     "GG5_TEAM_DRIVE": {
+      "description": "Input team_drive",
+      "value": ""
+    },           
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
       "value": "none"
     }
-
   },
   "website": "",
   "repository": "",
