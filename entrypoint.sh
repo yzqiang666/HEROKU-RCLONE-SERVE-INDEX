@@ -4,6 +4,8 @@ rclone version
 rclone listremotes
 #refreshing Rclone
 wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
+echo "$RCLONE_INFO" >'/.config/rclone/rclone1.conf'
+cat /.config/rclone/rclone1.conf
 rclone version
 rclone listremotes
 UU=""
