@@ -2,9 +2,17 @@
 #author https://github.com/developeranaz (don't delete this)
 rclone version
 rclone listremotes
-#refreshing Rclone
-#wget $CONFIG_IN_URL -O '/.config/rclone/rclone.conf'
-echo "$RCLONE_INFO" >'/.config/rclone/rclone.conf'
+cat <<-EOF >/.config/rclone/rclone.conf
+[team]
+type = drive
+client_id = #client_id#
+client_secret = #client_secret#
+scope = drive
+token = {"access_token":"#access_token#",  "token_type":"Bearer",  "refresh_token":"#refresh_token#"}
+team_drive = #team_drive#
+EOF
+
+eval "sed  -i 's/#client_id#/"$CLIENT_ID"/;s/#client_secret#/"$CLIENT_SECRET"/;s/#access_token#/"$ACCESS_TOKEN"/;s/#refresh_token#/"$REFRESH_TOKEN"/;s/#team_drive#/"$TEAM_DRIVE"/;'  /.config/rclone/rclone.conf"
 cat /.config/rclone/rclone.conf
 rclone version
 rclone listremotes
