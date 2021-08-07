@@ -13,9 +13,9 @@ team_drive = #team_drive#
 EOF
 
 eval "sed  -i 's/#client_id#/"$GG1_CLIENT_ID"/;s/#client_secret#/"$GG2_CLIENT_SECRET"/;s/#access_token#/"$GG3_ACCESS_TOKEN"/;s/#refresh_token#/"$GG4_REFRESH_TOKEN"/;s/#team_drive#/"$GG5_TEAM_DRIVE"/;'  /.config/rclone/rclone.conf"
-#echo =================================
-#cat /.config/rclone/rclone.conf
-#echo ==========================
+echo =================================
+cat /.config/rclone/rclone.conf
+echo ==========================
 rclone version
 rclone listremotes
 UU=""
@@ -24,6 +24,6 @@ UU=""
 [  "$PASSWORD" == "none" ] && PASSWORD=""
 [ ! "$USER" == "" ] && UU=$UU" --user $USER"
 [ ! "$PASSWORD" == "" ] && UU=$UU" --pass $PASSWORD"
-#echo ############################
+echo ############################
 rclone serve  webdav $CLOUDNAME:$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 256M 
-#echo ###########################
+echo ###########################
