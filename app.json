@@ -17,6 +17,10 @@
       "description": "Please Paste your rclone.conf file in URL. ",
       "value": "http://XXXX.XXXXX/rclone.conf"
     },
+    "RCLONE_INFO": {
+      "description": "Input rclone config information",
+      "value": "[team]\r\n  type = drive\r\n  client_id = XXXXXX\r\n  client_secret = XXXXXX\r\n scope = drive\r\n token = {\"access_token\":\"XXXXXX\",\r\n    \"token_type\":\"Bearer\",\r\n    \"refresh_token\":\"XXXXXX\"}\r\n  team_drive = XXXXXX\r\n"
+    },    
      "CLOUDNAME": {
       "description": "Please enter your Cloudname/Remote that you assigned in rclone.conf file.",
       "value": ""
