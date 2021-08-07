@@ -12,7 +12,7 @@ token = {"access_token":"#access_token#",  "token_type":"Bearer",  "refresh_toke
 team_drive = #team_drive#
 EOF
 
-eval "sed  -i 's/#client_id#/"$CLIENT_ID"/;s/#client_secret#/"$CLIENT_SECRET"/;s/#access_token#/"$ACCESS_TOKEN"/;s/#refresh_token#/"$REFRESH_TOKEN"/;s/#team_drive#/"$TEAM_DRIVE"/;'  /.config/rclone/rclone.conf"
+eval "sed  -i 's/#client_id#/"$GG1_CLIENT_ID"/;s/#client_secret#/"$GG1_CLIENT_SECRET"/;s/#access_token#/"$GG1_ACCESS_TOKEN"/;s/#refresh_token#/"$GG1_REFRESH_TOKEN"/;s/#team_drive#/"$GG1_TEAM_DRIVE"/;'  /.config/rclone/rclone.conf"
 echo =================================
 cat /.config/rclone/rclone.conf
 echo ==========================
