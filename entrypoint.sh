@@ -23,5 +23,5 @@ if [  "$CLOUDNAME" == "" ] ; then
 else
   CLOUDNAME=$CLOUDNAME":"
 fi
-rclone serve  webdav $CLOUDNAME$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size 256M 
+rclone serve  webdav $CLOUDNAME$CLOUDPATH --addr :$PORT $UU --vfs-read-chunk-size $VFS_READ_CHUNK_SIZE $OTHER_ARGUMENT
 
