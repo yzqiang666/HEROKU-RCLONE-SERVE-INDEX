@@ -15,23 +15,23 @@
     },
     "GG1_CLIENT_ID": {
       "description": "Please Paste  client_id",
-      "value": ""
+      "value": "292963262296-5thesrfcbherqrmedi67g02rocalqv8s.apps.googleusercontent.com"
     },
     "GG2_CLIENT_SECRET": {
       "description": "Please Paste  client_secret",
-      "value": ""
+      "value": "oA3CW0ZKEY4aEV3R3i4EnmC-"
     },
     "GG3_ACCESS_TOKEN": {
       "description": "Please Paste  access_token",
-      "value": ""
+      "value": "ya29.a0ARrdaM_PV6wZR-qd6jfHGn94lclQb9Sx6I6_f56ssK07H7WfwsIWh_zk8o6N83u7hLignRQzNpBYcqUlGfOchNz0v4YSvWjNSBGVZx-GERpC7baO7fkxafpvdUdzPHPFOpHjP95UTAZJttr3iqK3dAeqk3dZfBg"
     },    
     "GG4_REFRESH_TOKEN": {
       "description": "Please Paste  refresh_token",
-      "value": ""
+      "value": "1\\09BLgaHVh6c2HCgYIARAAGAkSNwF-L9IrP6D7O2FxyziXodmi9tABUNha1zmZnFBpC6_flf2pBLPs5SzNDjG6vGlKz0RHqaGN_OE"
     },    
      "GG5_TEAM_DRIVE": {
       "description": "Please Paste  team_drive",
-      "value": ""
+      "value": "0AGkd9x6_atkyUk9PVA"
     },                  
      "CLOUDPATH": {
       "description": "Please enter your remote cloud path",
